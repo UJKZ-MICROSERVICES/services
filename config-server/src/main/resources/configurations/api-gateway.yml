@@ -1,0 +1,17 @@
+server:
+  port: 8222
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: examen-service
+          uri: lb:http://EXAMEN-SERVICE
+          predicates:
+            - Path=/api/v1/examens/**
+        - id: academique-service
+          uri: lb:http://ACADEMIQUE-SERVICE
+          predicates:
+            - Path=/api/v1/academique-infos/**
