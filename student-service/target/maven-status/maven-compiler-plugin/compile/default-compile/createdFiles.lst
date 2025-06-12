@@ -1,0 +1,8 @@
+com\student\service\repositories\EtudiantRepository.class
+com\student\service\StudentServiceApplication.class
+com\student\service\repositories\FiliaireRepository.class
+com\student\service\dto\EtudiantDto.class
+com\student\service\dto\FiliaireDto.class
+com\student\service\models\Filiaire.class
+com\student\service\controllers\ApplicationController.class
+com\student\service\models\Etudiant.class
